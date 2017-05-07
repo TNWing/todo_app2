@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'about/About'
+  get 'list/1' => 'list#first'
   get 'list/index'
 
   root 'application#hello'

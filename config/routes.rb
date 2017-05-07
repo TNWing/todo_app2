@@ -3,8 +3,7 @@ Rails.application.routes.draw do
   get 'about/FAQs' => 'about#FAQs'
   get 'about/Contact' => 'about#Contact'
   get 'about/List' => 'about#List'
-  get 'list/1' => 'list#first'
-  get 'list/2' => 'list#second'
+  get 'list/:id' => 'list#show'
   get 'list/index'
 
   root 'application#hello'
